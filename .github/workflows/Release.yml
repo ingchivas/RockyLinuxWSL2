@@ -18,7 +18,8 @@ jobs:
     - name: Export Docker Container to rootfs
       run: docker export rocky-wsl -o rootfs.tar
     - name: Compress Rel in Zip
-      run: zip -r Rel.zip /home/runner/work/RockyLinuxWSL2/RockyLinuxWSL2
+      run: zip -r Rel.zip ./ -x '*.git*' -x '*.github*'
+      
     - name: Clean Directory
       run: rm -v !(*.zip)
     - uses: "marvinpinto/action-automatic-releases@latest"
@@ -28,4 +29,4 @@ jobs:
           prerelease: true
           title: "Automated Release"
           files: |
-            *
+            Rel.zip
