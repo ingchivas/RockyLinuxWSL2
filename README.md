@@ -10,7 +10,7 @@ Rocky Linux on WSL based on [wsldl by yuk7](https://github.com/yuk7/wsldl)
 
 - For Win 10 x64 systems: **Version 1903** or higher, with **Build 18362** or higher.
 
-- Docker ("If you want to get the rootfs by yourself")
+- Docker (If you want to get the rootfs by yourself)
 
 ## Enable WSL
 
@@ -38,7 +38,7 @@ It's suggested that you update the Linux kernel by running:
 wsl --update
 ```
 
-Or search for the update in the this [link](https://www.catalog.update.microsoft.com/Search.aspx?q=WSL) and install it manually.
+Or search for the update on this [link](https://www.catalog.update.microsoft.com/Search.aspx?q=WSL) and install it manually.
 
 ## Installing Rocky Linux 8.5 in WSL2
 
